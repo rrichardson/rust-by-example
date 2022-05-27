@@ -2,6 +2,8 @@
 #![allow(clippy::new_without_default)]
 #![allow(dead_code)]
 
+use futures;
+
 pub mod five;
 pub mod four;
 pub mod one;

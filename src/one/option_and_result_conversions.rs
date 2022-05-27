@@ -19,3 +19,16 @@ pub fn positive_sum(x: i32, y: i32) -> Result<i32, String> {
     let y = positive_n_result(y)?;
     Ok(x + y)
 }
+
+pub fn only_positive(x: i32) -> Option<i32> {
+    if x > 0 {
+        Some(x)
+    } else {
+        None
+    }
+}
+
+pub fn mult_if_positive(x: i32, y: i32) -> Option<i32> {
+    let res = only_positive(x);
+    res.map(|i| i * y)
+}

@@ -1,11 +1,13 @@
 [package]
-name = "rust-for-ts-devs"
+name = "rust-by-example"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
+authors = ["Arend van Beelen Jr", "Rick Richardson"]
 
 [[bin]]
 name = "learnrust"
 path = "src/bin/main.rs"
 
 [dependencies]
+futures = "0.3"
 time = "0.3"

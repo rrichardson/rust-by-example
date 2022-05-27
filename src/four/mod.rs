@@ -3,6 +3,7 @@
 ///
 /// Recommended Order:
 ///
+/// try_sugar
 /// reference_counting
 /// cells
 /// callbacks
@@ -14,3 +15,4 @@ pub mod cells;
 pub mod function_traits;
 pub mod iterators;
 pub mod reference_counting;
+pub mod try_sugar;

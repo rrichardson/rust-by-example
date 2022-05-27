@@ -10,7 +10,7 @@
 /// Learn more about them in the Rust Book:
 /// https://doc.rust-lang.org/book/ch13-02-iterators.html
 ///
-pub fn my_first_iteration(a: u32) -> u32 {
+pub fn my_first_iteration() -> u32 {
     let myarray = [0u32, 1, 2, 3, 4, 5];
     let myvec = vec![6u32, 7, 8, 9, 10];
     let generated = 0u32..100;
@@ -20,7 +20,7 @@ pub fn my_first_iteration(a: u32) -> u32 {
     halfway.sum()
 }
 
-pub fn my_next_iteration(a: u32) -> u32 {
+pub fn my_next_iteration() -> u32 {
     let myarray = [0u32, 1, 2, 3, 4, 5];
     let myvec = vec![6u32, 7, 8, 9, 10];
     let generated = 0u32..100;
@@ -30,7 +30,7 @@ pub fn my_next_iteration(a: u32) -> u32 {
     halfway.fold(0, |accum, x| accum + x)
 }
 
-pub fn returning_iterators(a: u32) -> impl Iterator<Item = u32> {
+pub fn returning_iterators() -> impl Iterator<Item = u32> {
     let myarray = [0u32, 1, 2, 3, 4, 5];
     let myvec = vec![6u32, 7, 8, 9, 10];
     let generated = 0u32..100;
@@ -39,8 +39,8 @@ pub fn returning_iterators(a: u32) -> impl Iterator<Item = u32> {
     master.map(|num| num * 10)
 }
 
-pub fn run_iterator(a: u32) {
-    let it = returning_iterators(a);
+pub fn run_iterator() {
+    let it = returning_iterators();
     for x in it {
         println!("iter: {}", x);
     }

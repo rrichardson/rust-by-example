@@ -7,10 +7,10 @@ pub fn hurray_for_maps() {
     // This is a good opportunity to talk about Type Inference
     // NOTE : Temporarily disable inlay hints to better see the distinction here
     //        mod + p - search for inlay, then disable
-    let map3 = BTreeMap::<i32, &str>::from([(1, "Hello"), (2, "World")]);
-    let map4 = BTreeMap::<i32, _>::from([(1, "Hello"), (2, "World")]);
+    let _map3 = BTreeMap::<i32, &str>::from([(1, "Hello"), (2, "World")]);
+    let _map4 = BTreeMap::<i32, _>::from([(1, "Hello"), (2, "World")]);
 
-    let map5 = BTreeMap::from([(1i32, "Hello"), (2i32, "World")]);
+    let _map5 = BTreeMap::from([(1i32, "Hello"), (2i32, "World")]);
 
     map2.extend(map1.iter());
 
