@@ -13,9 +13,9 @@ While using this repo, it is recommended that you make heavy use of the
 
  [Rust Book](https://doc.rust-lang.org/stable/book/)
 
-Other helpful links:
-  [A more comprehensive learning library](https://www.rust-lang.org/learn) -- The official documentation list
-  [Awesome Rust](https://github.com/rust-unofficial/awesome-rust) -- Look here for 3rd party libraries for your projects
+Other helpful links:  
+- [A more comprehensive learning library](https://www.rust-lang.org/learn) -- The official documentation list  
+- [Awesome Rust](https://github.com/rust-unofficial/awesome-rust) -- Look here for 3rd party libraries for your projects  
 
 
 ## How to use this repository
