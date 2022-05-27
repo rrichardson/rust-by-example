@@ -1,0 +1,11 @@
+[package]
+name = "rust-for-ts-devs"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+name = "learnrust"
+path = "src/bin/main.rs"
+
+[dependencies]
+time = "0.3"
